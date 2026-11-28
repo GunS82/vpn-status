@@ -1,106 +1,8 @@
 # Ручки для дверей
 
-# 1. 🔒 🇺🇸 OpenVPN in-ru001:1021 _nvae_
-# = отличный · 11 Мбит/с · 814 мс
-#profile-title: base64:8J+UkiDwn4e68J+HuCBPcGVuVlBOIGluLXJ1MDAxOjEwMjEgX252YWVf
-client
-proto udp
-dev tun
-resolv-retry infinite
-nobind
-persist-key
-persist-tun
-remote-cert-tls server
-verify-x509-name server name
-auth SHA256
-auth-user-pass
-cipher AES-128-GCM
-tls-client
-tls-version-min 1.2
-tls-cipher TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256:TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256
-ignore-unknown-option block-outside-dns
-verb 3
-remote in-ru001.vpntype.dev 1021
-<ca>
------BEGIN CERTIFICATE-----
-MIIDHTCCAgWgAwIBAgIUcT5KhYPAv/+JgH96aq8j0rG3h8wwDQYJKoZIhvcNAQEL
-BQAwHjEcMBoGA1UEAwwTY2hpMS52cG50eXBlLmRldiBDQTAeFw0yNjExMTgxMzE2
-NTBaFw0zNjExMTUxMzE2NTBaMB4xHDAaBgNVBAMME2NoaTEudnBudHlwZS5kZXYg
-Q0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDOlw6oQ+Z/6rtAdVVZ
-RaTuYbebqDn9WH9yi6OP43vCYI6wKWWMqv+a72iDAYDXaKSuMEVa55C8w2tttS01
-DT9f+2q7HjtmicjQ9YLlAvoFNEdcxlOmf3Du4FWbH80YKq2KTeSe6KZPc4JXMnsD
-HWFq61iIDv2pjXAa9ypWnMHytCbK7X6n/uHdHKLnWCMm/RRIdUKM/+7pD5ROcv57
-d3ef/aWLW5EC4Y3z82m9xvSbKN+VnElAjLgK0Ob3QGkapM0unhRjPyeh/twWIvQr
-OQeU2CGpSwy8N1Arz+oV0jaJ6nbfPc4si9pK3p9U3HicbKPzZyTyTMwH8zYWIfZT
-Ay3vAgMBAAGjUzBRMB0GA1UdDgQWBBReiQcahBuXsGFPBX9YICqcS4PbTTAfBgNV
-HSMEGDAWgBReiQcahBuXsGFPBX9YICqcS4PbTTAPBgNVHRMBAf8EBTADAQH/MA0G
-CSqGSIb3DQEBCwUAA4IBAQBVlXVeDC0k3Wz4q7fnymPFqlH/Pu9BeYFeoeGOLt0V
-M571ESRDoGLE3CGz9qthLyxFGwZD0Wamg9I7YUwrFIShiOPXE74Fwh6F5rwmd1iF
-pWNAa+yLBweRiJnHrsYpCkPgEneZ/HZjMYxE6OgenYRQhzOkB96TnR+2ZC3f2aaP
-xVZRdpCMzs89Sivho0ck2Qs8KRGU54orewnxy/BUM6OAjUrMr6nPeANzw3rfhS/u
-Efoyrcd1bcaW68ejDc32RyxKcweHeyBnhNibP57ywVh7b9D7XJxyRFoxtsusowCg
-rlZ9YOKBrPJXzJaHmwo7ZE8hsPvmV66c3XUhd520aQgJ
------END CERTIFICATE-----
-</ca>
-<cert>
------BEGIN CERTIFICATE-----
-MIIDCzCCAfOgAwIBAgIUYCT7tKZUlFDtLlBnGOJ8aTmT2BcwDQYJKoZIhvcNAQEL
-BQAwHjEcMBoGA1UEAwwTY2hpMS52cG50eXBlLmRldiBDQTAeFw0yNjExMTgxMzE2
-NTBaFw0zNjExMTUxMzE2NTBaMBExDzANBgNVBAMMBnNlcnZlcjCCASIwDQYJKoZI
-hvcNAQEBBQADggEPADCCAQoCggEBAJgKMfdWytt6tvNC1Ro2aOk1uG976dOYrchs
-dH/QTI7C8MGdhKpLLJPe2V3/aOYw24ACZkgmoXsJ/nH6mLfrH5TZ6SIkDzwNcTHq
-2DigiuA6/4v2zKulHjHAEV5f+I2CbFDqOiZTAX4Kf3WEQN+aUa2yWJPANWEk6x9N
-BqxHirXR+8MbxHoIKuj38EGmwJZ7GGcPT7hZKeIHFKNOergLjYC01aF4tJnVtCQ3
-b6dbMNwK7txlybQU/gXpJU2G5Cb0cL7NA+vjRSLcjBYKPoFjKXPFI0b+YRMJKOs0
-gJ7uIM5YmaLXavd7Y5wX2f4qS3gf0lDB4/+ioQzerkJH0AaJgDsCAwEAAaNOMEww
-CQYDVR0TBAIwADALBgNVHQ8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYD
-VR0OBBYEFAyyf5ydW3hdF58yejuFYDhtP54zMA0GCSqGSIb3DQEBCwUAA4IBAQDG
-S7S9CEEzrrSS3izAIp679ySNeIcY7C4cgL+DM43fi2nubPedeOD/T2EUP8y1UxCg
-yxCipToILtsMm69go38vElDVABVHoS2GF2ud73lCj4V0p5CNpFySv57Qq2kQTm9y
-OHvXf/NK7L6CS+S0qcl6vOtz1juNz/u6Xse76MJvv8tn5wVJKVLy14+i/I42WeXf
-eSj1thnZ46tyGNGERhfbgFiOJKwgZ6JLFaKNDOrGqad34hatHd9FA3Lhnug3gPax
-rfid8aEAdI5ALMqqrxaJypMJHsLuqOQTbNC5ODcc+NjbscYlDxlvAfhMUpdZrO4h
-ACUCU60z5LY/nJHKYmn4
------END CERTIFICATE-----
-</cert>
-<key>
------BEGIN PRIVATE KEY-----
-MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCYCjH3Vsrberbz
-QtUaNmjpNbhve+nTmK3IbHR/0EyOwvDBnYSqSyyT3tld/2jmMNuAAmZIJqF7Cf5x
-+pi36x+U2ekiJA88DXEx6tg4oIrgOv+L9syrpR4xwBFeX/iNgmxQ6jomUwF+Cn91
-hEDfmlGtsliTwDVhJOsfTQasR4q10fvDG8R6CCro9/BBpsCWexhnD0+4WSniBxSj
-Tnq4C42AtNWheLSZ1bQkN2+nWzDcCu7cZcm0FP4F6SVNhuQm9HC+zQPr40Ui3IwW
-Cj6BYylzxSNG/mETCSjrNICe7iDOWJmi12r3e2OcF9n+Kkt4H9JQweP/oqEM3q5C
-R9AGiYA7AgMBAAECggEABhqKrPpQBIWlqJhrQ7UhexNMBzW7SmJbv6sS9jqfiC+t
-SKiRNeD0ti8BHPPu+ybE+RufjY/3daAOFfdQgDmxN+GTqWo3Llr/y1g5O/S9/oh/
-z9elmdJ0Jt0mFVrW+J9ex9TPZtB4Q94aBda8X/2q/8UkJzJVMkQwKD6IYQwyNmBa
-2buCkmg+GtIQD9CQyDLgJ1kD3DLKSziTbrnPVirPZArarbcWgW0LEwtnrSzVanY2
-b/LuTiLJ8wU5+zhBslhZlYE2t2qMdwmMZixBaTV1O57SbzJ/pE2ZU8ysyCkTzDfs
-9j1FUu2L8TGmqAyxFEAIDszHm3jDefILBAE7XLu54QKBgQDKHPIZTzcAJVVNbqXv
-XixkKKqoWFs29jydjSvyEAUnz7hkV0k5rMfg8mLbw3aOaILMxFR/CpnAAbox83St
-2Jlnhq0BJGuLvVLvowRS57Ay1q11KqRSqGSSZ7i3f5BxTR+BBYU4f7/OW8WXq4Jd
-xIebDNH6T1rH/44JqC23GNE0UQKBgQDAk4sJp6w9cJ7zNQWf0FNXGsOyclGUiaBe
-DPcItQyR+lPYqnB0vvofFMm1A3dnpwpVEHE0w0HTfWdinwjhG9oFcEmiY7U68fEx
-1YaX4EFenwh+6u3fcHUkDGLqzgkifHtwK3SvMFN7r6x41z5w94AOH4/vHO4kGYZC
-hHoZIGfEywKBgAUUSyVFr10qkwU6JaNpW3Y862UFq20rLQTMmnEf4/FHMBwdcXKo
-m/FURhW9yMn1aGwa9wCmVIzVvkcpFiKUUe6fHNPthWJipKXvE9m9htkQOhW6t5x4
-LObdAnBiHVArnwIQEHQGCdz2w3V3UvRmTv4fiVtgCSkDjB9EAbobPo6xAoGBAJYg
-r6yoNYN0T8YEGM1c6AuoxtVPf7/PhuCrNM5p7lHDGCh5vs+UroMafqEKAcUhmNF1
-zvs2GRQZ2EYu+woa312MCyt4lalNQh36e0HdRrjQPBxNY4HkNr4Sle69Dqv+5XAt
-wHpurzZmXouaKYiBuifIfToIkLI938ftZQ4/kAX/AoGAIt5y6ThTRCNQoBxx4lX2
-V4xHZWbYQ5mvwY34eoTgVIL8ki0ak0K/4jWc1ecwqUfugaQ6OkQWlfKt8QEptbHw
-2sNcLJbQ0Xq6qJ31+9IYEeS1GDaTGf7ifs8MurqnE13oXBd9TXWZ9FV4drK6SUTo
-aN22SfOpRtuYYnxwEYoIgVc=
------END PRIVATE KEY-----
-</key>
-<auth-user-pass>
-user3140786
-ZeffY8GiPY0fA7o1Istkz7idzaKD5VSm
-</auth-user-pass>
-
-# 2. 🔒 OpenVPN in-ru001:1194 _djgx_
-# = отличный · 11 Мбит/с · 5045 мс
-#profile-title: base64:8J+UkiBPcGVuVlBOIGluLXJ1MDAxOjExOTQgX2RqZ3hf
+# 1. 🔒 🇺🇸 OpenVPN in-ru001:1194 _djgx_
+# = отличный · 11 Мбит/с · 1019 мс
+#profile-title: base64:8J+UkiDwn4e68J+HuCBPcGVuVlBOIGluLXJ1MDAxOjExOTQgX2RqZ3hf
 client
 proto udp
 dev tun
@@ -201,8 +103,131 @@ user3140786
 AKk4rDhrltBbelUxMuIgwYDxITm80u7q
 </auth-user-pass>
 
-# 3. 🔒 🇷🇺 Атланта _y26t_
-# = хороший · 9,5 Мбит/с · 1596 мс
+# 2. 🔒 🇺🇸 OpenVPN in-ru001:1021 _nvae_
+# = отличный · 11 Мбит/с · 1176 мс
+#profile-title: base64:8J+UkiDwn4e68J+HuCBPcGVuVlBOIGluLXJ1MDAxOjEwMjEgX252YWVf
+client
+proto udp
+dev tun
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+remote-cert-tls server
+verify-x509-name server name
+auth SHA256
+auth-user-pass
+cipher AES-128-GCM
+tls-client
+tls-version-min 1.2
+tls-cipher TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256:TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256
+ignore-unknown-option block-outside-dns
+verb 3
+remote in-ru001.vpntype.dev 1021
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIDHTCCAgWgAwIBAgIUcT5KhYPAv/+JgH96aq8j0rG3h8wwDQYJKoZIhvcNAQEL
+BQAwHjEcMBoGA1UEAwwTY2hpMS52cG50eXBlLmRldiBDQTAeFw0yNjExMTgxMzE2
+NTBaFw0zNjExMTUxMzE2NTBaMB4xHDAaBgNVBAMME2NoaTEudnBudHlwZS5kZXYg
+Q0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDOlw6oQ+Z/6rtAdVVZ
+RaTuYbebqDn9WH9yi6OP43vCYI6wKWWMqv+a72iDAYDXaKSuMEVa55C8w2tttS01
+DT9f+2q7HjtmicjQ9YLlAvoFNEdcxlOmf3Du4FWbH80YKq2KTeSe6KZPc4JXMnsD
+HWFq61iIDv2pjXAa9ypWnMHytCbK7X6n/uHdHKLnWCMm/RRIdUKM/+7pD5ROcv57
+d3ef/aWLW5EC4Y3z82m9xvSbKN+VnElAjLgK0Ob3QGkapM0unhRjPyeh/twWIvQr
+OQeU2CGpSwy8N1Arz+oV0jaJ6nbfPc4si9pK3p9U3HicbKPzZyTyTMwH8zYWIfZT
+Ay3vAgMBAAGjUzBRMB0GA1UdDgQWBBReiQcahBuXsGFPBX9YICqcS4PbTTAfBgNV
+HSMEGDAWgBReiQcahBuXsGFPBX9YICqcS4PbTTAPBgNVHRMBAf8EBTADAQH/MA0G
+CSqGSIb3DQEBCwUAA4IBAQBVlXVeDC0k3Wz4q7fnymPFqlH/Pu9BeYFeoeGOLt0V
+M571ESRDoGLE3CGz9qthLyxFGwZD0Wamg9I7YUwrFIShiOPXE74Fwh6F5rwmd1iF
+pWNAa+yLBweRiJnHrsYpCkPgEneZ/HZjMYxE6OgenYRQhzOkB96TnR+2ZC3f2aaP
+xVZRdpCMzs89Sivho0ck2Qs8KRGU54orewnxy/BUM6OAjUrMr6nPeANzw3rfhS/u
+Efoyrcd1bcaW68ejDc32RyxKcweHeyBnhNibP57ywVh7b9D7XJxyRFoxtsusowCg
+rlZ9YOKBrPJXzJaHmwo7ZE8hsPvmV66c3XUhd520aQgJ
+-----END CERTIFICATE-----
+</ca>
+<cert>
+-----BEGIN CERTIFICATE-----
+MIIDCzCCAfOgAwIBAgIUYCT7tKZUlFDtLlBnGOJ8aTmT2BcwDQYJKoZIhvcNAQEL
+BQAwHjEcMBoGA1UEAwwTY2hpMS52cG50eXBlLmRldiBDQTAeFw0yNjExMTgxMzE2
+NTBaFw0zNjExMTUxMzE2NTBaMBExDzANBgNVBAMMBnNlcnZlcjCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAJgKMfdWytt6tvNC1Ro2aOk1uG976dOYrchs
+dH/QTI7C8MGdhKpLLJPe2V3/aOYw24ACZkgmoXsJ/nH6mLfrH5TZ6SIkDzwNcTHq
+2DigiuA6/4v2zKulHjHAEV5f+I2CbFDqOiZTAX4Kf3WEQN+aUa2yWJPANWEk6x9N
+BqxHirXR+8MbxHoIKuj38EGmwJZ7GGcPT7hZKeIHFKNOergLjYC01aF4tJnVtCQ3
+b6dbMNwK7txlybQU/gXpJU2G5Cb0cL7NA+vjRSLcjBYKPoFjKXPFI0b+YRMJKOs0
+gJ7uIM5YmaLXavd7Y5wX2f4qS3gf0lDB4/+ioQzerkJH0AaJgDsCAwEAAaNOMEww
+CQYDVR0TBAIwADALBgNVHQ8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYD
+VR0OBBYEFAyyf5ydW3hdF58yejuFYDhtP54zMA0GCSqGSIb3DQEBCwUAA4IBAQDG
+S7S9CEEzrrSS3izAIp679ySNeIcY7C4cgL+DM43fi2nubPedeOD/T2EUP8y1UxCg
+yxCipToILtsMm69go38vElDVABVHoS2GF2ud73lCj4V0p5CNpFySv57Qq2kQTm9y
+OHvXf/NK7L6CS+S0qcl6vOtz1juNz/u6Xse76MJvv8tn5wVJKVLy14+i/I42WeXf
+eSj1thnZ46tyGNGERhfbgFiOJKwgZ6JLFaKNDOrGqad34hatHd9FA3Lhnug3gPax
+rfid8aEAdI5ALMqqrxaJypMJHsLuqOQTbNC5ODcc+NjbscYlDxlvAfhMUpdZrO4h
+ACUCU60z5LY/nJHKYmn4
+-----END CERTIFICATE-----
+</cert>
+<key>
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCYCjH3Vsrberbz
+QtUaNmjpNbhve+nTmK3IbHR/0EyOwvDBnYSqSyyT3tld/2jmMNuAAmZIJqF7Cf5x
++pi36x+U2ekiJA88DXEx6tg4oIrgOv+L9syrpR4xwBFeX/iNgmxQ6jomUwF+Cn91
+hEDfmlGtsliTwDVhJOsfTQasR4q10fvDG8R6CCro9/BBpsCWexhnD0+4WSniBxSj
+Tnq4C42AtNWheLSZ1bQkN2+nWzDcCu7cZcm0FP4F6SVNhuQm9HC+zQPr40Ui3IwW
+Cj6BYylzxSNG/mETCSjrNICe7iDOWJmi12r3e2OcF9n+Kkt4H9JQweP/oqEM3q5C
+R9AGiYA7AgMBAAECggEABhqKrPpQBIWlqJhrQ7UhexNMBzW7SmJbv6sS9jqfiC+t
+SKiRNeD0ti8BHPPu+ybE+RufjY/3daAOFfdQgDmxN+GTqWo3Llr/y1g5O/S9/oh/
+z9elmdJ0Jt0mFVrW+J9ex9TPZtB4Q94aBda8X/2q/8UkJzJVMkQwKD6IYQwyNmBa
+2buCkmg+GtIQD9CQyDLgJ1kD3DLKSziTbrnPVirPZArarbcWgW0LEwtnrSzVanY2
+b/LuTiLJ8wU5+zhBslhZlYE2t2qMdwmMZixBaTV1O57SbzJ/pE2ZU8ysyCkTzDfs
+9j1FUu2L8TGmqAyxFEAIDszHm3jDefILBAE7XLu54QKBgQDKHPIZTzcAJVVNbqXv
+XixkKKqoWFs29jydjSvyEAUnz7hkV0k5rMfg8mLbw3aOaILMxFR/CpnAAbox83St
+2Jlnhq0BJGuLvVLvowRS57Ay1q11KqRSqGSSZ7i3f5BxTR+BBYU4f7/OW8WXq4Jd
+xIebDNH6T1rH/44JqC23GNE0UQKBgQDAk4sJp6w9cJ7zNQWf0FNXGsOyclGUiaBe
+DPcItQyR+lPYqnB0vvofFMm1A3dnpwpVEHE0w0HTfWdinwjhG9oFcEmiY7U68fEx
+1YaX4EFenwh+6u3fcHUkDGLqzgkifHtwK3SvMFN7r6x41z5w94AOH4/vHO4kGYZC
+hHoZIGfEywKBgAUUSyVFr10qkwU6JaNpW3Y862UFq20rLQTMmnEf4/FHMBwdcXKo
+m/FURhW9yMn1aGwa9wCmVIzVvkcpFiKUUe6fHNPthWJipKXvE9m9htkQOhW6t5x4
+LObdAnBiHVArnwIQEHQGCdz2w3V3UvRmTv4fiVtgCSkDjB9EAbobPo6xAoGBAJYg
+r6yoNYN0T8YEGM1c6AuoxtVPf7/PhuCrNM5p7lHDGCh5vs+UroMafqEKAcUhmNF1
+zvs2GRQZ2EYu+woa312MCyt4lalNQh36e0HdRrjQPBxNY4HkNr4Sle69Dqv+5XAt
+wHpurzZmXouaKYiBuifIfToIkLI938ftZQ4/kAX/AoGAIt5y6ThTRCNQoBxx4lX2
+V4xHZWbYQ5mvwY34eoTgVIL8ki0ak0K/4jWc1ecwqUfugaQ6OkQWlfKt8QEptbHw
+2sNcLJbQ0Xq6qJ31+9IYEeS1GDaTGf7ifs8MurqnE13oXBd9TXWZ9FV4drK6SUTo
+aN22SfOpRtuYYnxwEYoIgVc=
+-----END PRIVATE KEY-----
+</key>
+<auth-user-pass>
+user3140786
+ZeffY8GiPY0fA7o1Istkz7idzaKD5VSm
+</auth-user-pass>
+
+# 3. 🟪 🇸🇪 Стокгольм _q47x_
+# = отличный · 11 Мбит/с · 4555 мс
+#profile-title: base64:8J+fqiDwn4e48J+HqiDQodGC0L7QutCz0L7Qu9GM0LwgX3E0N3hf
+[Interface]
+PrivateKey = 6HPuoj4tQ2XJQ4OwNg9tx1cFemJKuvzGkiyiht1CkG8=
+Address = 10.0.2.99/32
+DNS = 8.8.8.8
+Jc = 9
+Jmin = 91
+Jmax = 203
+S1 = 27
+S2 = 49
+S3 = 91
+S4 = 84
+H1 = 189350492
+H2 = 431522061
+H3 = 998342375
+H4 = 1022251435
+
+[Peer]
+PublicKey = e6blVx+SmVlVd++qcCpNV/7iStWKWeSj4ZeORe3qUnw=
+Endpoint = sto1.vpntype.dev:4000
+AllowedIPs = 0.0.0.0/0
+PersistentKeepalive = 20
+
+# 4. 🔒 🇷🇺 Атланта _y26t_
+# = отличный · 10 Мбит/с · 1090 мс
 #profile-title: base64:8J+UkiDwn4e38J+HuiDQkNGC0LvQsNC90YLQsCBfeTI2dF8=
 client
 proto udp
@@ -304,8 +329,8 @@ user3140786
 rx6OACXoCOcMhhiWylVylfqORqaPI2Jt
 </auth-user-pass>
 
-# 4. 🔒 🇮🇱 OpenVPN in-ru001:5555 TCP _zbqg_
-# = медленный · 1,8 Мбит/с · 2006 мс
+# 5. 🔒 🇮🇱 OpenVPN in-ru001:5555 TCP _zbqg_
+# = отличный · 10 Мбит/с · 890 мс
 #profile-title: base64:8J+UkiDwn4eu8J+HsSBPcGVuVlBOIGluLXJ1MDAxOjU1NTUgVENQIF96YnFnXw==
 client
 proto tcp
@@ -403,33 +428,8 @@ user3140786
 4Bfm3FJAHCX35GDJZdhHhdIwcEtDmEQI
 </auth-user-pass>
 
-# 5. 🟪 🇸🇪 Стокгольм _q47x_
-# = медленный · 1,6 Мбит/с · 4681 мс
-#profile-title: base64:8J+fqiDwn4e48J+HqiDQodGC0L7QutCz0L7Qu9GM0LwgX3E0N3hf
-[Interface]
-PrivateKey = 6HPuoj4tQ2XJQ4OwNg9tx1cFemJKuvzGkiyiht1CkG8=
-Address = 10.0.2.99/32
-DNS = 8.8.8.8
-Jc = 9
-Jmin = 91
-Jmax = 203
-S1 = 27
-S2 = 49
-S3 = 91
-S4 = 84
-H1 = 189350492
-H2 = 431522061
-H3 = 998342375
-H4 = 1022251435
-
-[Peer]
-PublicKey = e6blVx+SmVlVd++qcCpNV/7iStWKWeSj4ZeORe3qUnw=
-Endpoint = sto1.vpntype.dev:4000
-AllowedIPs = 0.0.0.0/0
-PersistentKeepalive = 20
-
 # 6. 🔒 OpenVPN in-ru008:3003 _5p29_
-# = медленный · 1,1 Мбит/с · 5793 мс
+# = медленный · 1,3 Мбит/с · 10268 мс
 #profile-title: base64:8J+UkiBPcGVuVlBOIGluLXJ1MDA4OjMwMDMgXzVwMjlf
 client
 proto udp
